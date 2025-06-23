@@ -1,11 +1,11 @@
-package com.echo.ecommerce
+package com.echo.user
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class EcommerceApplication
+class UserServiceApplication
 
 fun main(args: Array<String>) {
-	runApplication<EcommerceApplication>(*args)
+	runApplication<UserServiceApplication>(*args)
 }
