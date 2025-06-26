@@ -16,6 +16,10 @@ class UserService(
         return userRepository.save(User(name, email))
     }
 
+    fun findById(id: Long): User {
+        return userRepository.findById(id).orElseThrow()
+    }
+
     fun getAllUsers(): List<User> {
         return userRepository.findAll()
     }
